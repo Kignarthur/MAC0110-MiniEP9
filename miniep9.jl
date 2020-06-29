@@ -32,3 +32,23 @@ function multiplica(a, b)
 
     return c
 end
+
+
+function matrix_pot_by_squaring(M, p)
+    
+    K = 1
+
+    while p != 0
+
+        if p % 2 != 0
+            K *= M
+        end
+    
+        M = multiplica(M,M)
+        p = div(p,2)
+
+    end
+
+    return K
+
+end
