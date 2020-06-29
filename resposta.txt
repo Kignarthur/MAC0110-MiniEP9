@@ -16,3 +16,7 @@ A função matrix_pot precisa multiplicar as matrizes "p" vezes
 Porém, a função matrix_pot_by_squaring só precisa multiplicar pela
     quantidade de bits que a potência tem em representação binária.
 Logo, aproximadamente log(2)[p] multiplicações.
+
+Assim, como a quantidade de multiplicações é bem menor, o tempo de execução
+    da segunda função também será.
+    
