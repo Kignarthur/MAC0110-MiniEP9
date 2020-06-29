@@ -2,6 +2,7 @@
 using LinearAlgebra
 using Test
 
+
 function matrix_pot(M, p)
 
     N = M
@@ -36,7 +37,6 @@ function multiplica(a, b)
     return c
 end
 
-
 function matrix_pot_by_squaring(M, p)
     
     K = 1
@@ -50,4 +50,14 @@ function matrix_pot_by_squaring(M, p)
 
     return K
 
+end
+
+function compare_times()
+
+    size = 100
+    p = 50
+    M = rand( size, size )
+
+    @time matrix_pot(M, p)
+    @time matrix_pot_by_squaring(M, p)
 end

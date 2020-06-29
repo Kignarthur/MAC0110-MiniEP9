@@ -1,0 +1,18 @@
+|  Matrix   | Pow |    matrix_pot     | matrix_pot_by_squaring |
++-----------+-----+-------------------+------------------------+
+| 1x1       | 2   | 0.000020 seconds  | 0.000002 seconds       |
+| 5x5       | 5   | 0.072278 seconds  | 0.000051 seconds       |
+| 50 x 50   | 25  | 0.086380 seconds  | 0.001465 seconds       |
+| 100 x 100 | 50  | 0.210944 seconds  | 0.013704 seconds       |
+| 100 x 100 | 50  | 0.130618 seconds  | 0.015595 second        |
+| 250x250   | 100 | 4.454455 seconds  | 0.233422 seconds       |
+| 250x250   | 100 | 4.114937 seconds  | 0.254648 seconds       |
+| 500x500   | 150 | 49.804957 seconds | 2.305058 seconds       |
+| 1000x1000 | 500 | Inf               | 24.516674 seconds      |
+
+A função matrix_pot precisa multiplicar as matrizes "p" vezes
+    (p é a potência).
+
+Porém, a função matrix_pot_by_squaring só precisa multiplicar pela
+    quantidade de bits que a potência tem em representação binária.
+Logo, aproximadamente log(2)[p] multiplicações.
